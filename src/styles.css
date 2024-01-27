@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+
+}
+
+:root{
+    --light: #999;
+}
+
+.flex{  
+    display: flex; 
+}
+
+body{
+    padding: 4rem 10rem;
+
+}
+
+/* navbar */
+nav{
+    margin-bottom: 4rem;
+}
+
+nav > h1{
+    font-size: 2.5rem;
+}
+
+nav > p{
+    color: var(--light);
+}
+
+/* main */
+main{
+    width: 80%;
+    margin-left: 6rem;
+    padding: 2rem;
+    padding-left: 0;
+}
+
+ td, th{
+    border-color: black;
+    border-style: solid;
+    border-spacing: 0;
+    border-width: 0 0 1px 0;
+    padding: 8px 2px;
+    
+}
+th{
+    text-align: left;
+}
+
+table{
+    width: 100%;
+}
+
+main td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.fa-trash-can{
+    color: rgb(153, 0, 0);
+}
+
+.fa-pencil{
+    color: #337ab7;
+}
+
+.fa-circle-check{
+    color: green;
+    font-size: large;
+}
+
+i{
+    cursor: pointer;
+}
+
+/* add contact form */
+aside{
+    width: 22%;
+    padding-top: 2rem;
+    padding-left: 0;
+}
+
+aside > h2{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 0.2rem;
+}
+
+aside button{
+    background-color: #337ab7;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+aside input{
+    margin-bottom: 20px;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+
