@@ -64,22 +64,22 @@ main td{
     font-weight: 500;
 }
 
-.fa-trash-can{
+.trash{
     color: rgb(153, 0, 0);
+    cursor: pointer;
 }
 
-.fa-pencil{
+.pencil{
     color: #337ab7;
+    cursor: pointer;
 }
 
-.fa-circle-check{
+.ok{
     color: green;
+    cursor: pointer;
     font-size: large;
 }
 
-i{
-    cursor: pointer;
-}
 
 /* add contact form */
 aside{

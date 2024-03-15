@@ -1,4 +1,7 @@
 import { useRef, useState } from "react"
+import { MdEdit } from "react-icons/md";
+import { MdDelete } from "react-icons/md";
+import { MdCheckCircle } from "react-icons/md";
 
 export default function ContactList(props){
     
@@ -36,7 +39,7 @@ export default function ContactList(props){
                                         <td><input type="email" ref={emailRef} defaultValue={value.email} /></td>
                                         <td><input type="tel" ref={phoneRef} defaultValue={value.phone}/></td>
                                         <td style={{textAlign: 'right'}}>
-                                            <i className="fa-solid fa-circle-check" onClick={(e) => handleUpdate(value.id)} ></i>
+                                            <MdCheckCircle className="ok" onClick={(e) => handleUpdate(value.id)} />
                                         </td>
                                     </tr>                               
                         }
@@ -46,9 +49,9 @@ export default function ContactList(props){
                                         <td>{value.email}</td>
                                         <td>{value.phone}</td>
                                         <td style={{textAlign: 'right'}}>
-                                            <i className="fa-solid fa-pencil" onClick={() => setEditMode({mode: true, phone: value.phone})}></i>
+                                            <MdEdit size="18" className="fa-pencil" onClick={() => setEditMode({mode: true, phone: value.phone})} />
                                             &nbsp;&nbsp;&nbsp;
-                                            <i className="fa-solid fa-trash-can" onClick={() => props.deleteContact(value.id)}></i>
+                                            <MdDelete className="trash" onClick={() => props.deleteContact(value.id)} />
                                         </td>
                                     </tr>
                         }

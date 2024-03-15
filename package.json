@@ -1,5 +1,7 @@
 {
-  "name": "contactapp",
+  "homepage": "https://Immortals430.github.io/Contact-list-React-app",
+  "name": "contact-list-react-app",
+  "author": "Immortals430",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,10 +11,13 @@
     "axios": "^1.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
